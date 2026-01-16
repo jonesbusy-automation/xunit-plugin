@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>5.27</version>
+        <version>6.2116.v7501b_67dc517</version>
         <relativePath />
     </parent>
 
@@ -56,6 +56,7 @@
         <assertj.version>3.27.6</assertj.version>
         <dtkit-api.version>3.0.3</dtkit-api.version>
         <xmlunit.version>2.11.0</xmlunit.version>
+        <ban-commons-lang-2.skip>false</ban-commons-lang-2.skip>
     </properties>
 
     <repositories>
@@ -85,6 +86,10 @@
     </dependencyManagement>
 
     <dependencies>
+  <dependency>
+   <groupId>io.jenkins.plugins</groupId>
+   <artifactId>commons-lang3-api</artifactId>
+  </dependency>
         <dependency>
             <groupId>io.jenkins.plugins</groupId>
             <artifactId>jaxb</artifactId>
